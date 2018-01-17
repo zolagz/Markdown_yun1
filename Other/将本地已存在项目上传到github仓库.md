@@ -107,6 +107,7 @@ Applying: for test
 ```
 在本地仓库可以查看到README.md已下载下来
 如果提示Applying:add local crifanLib to github
+
 ```
 $ git push origin master
 ```
