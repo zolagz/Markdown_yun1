@@ -19,16 +19,16 @@ java-1.7.0-openjdk-1.7.0.79-2.5.5.4.el6.i686
 [root@localhost ~]# yum -y remove java-1.7.0-openjdk-1.7.0.79-2.5.5.4.el6.i686
 
 ```
-将jdk-7u55-linux-i586.tar.gz上传至虚拟机
+将 jdk-7u75-linux-x64.tar [网盘下载](https://pan.baidu.com/s/1bq25XHP) 上传至虚拟机
 
 ```
-[root@localhost jdk]# tar zxvf jdk-7u55-linux-i586.tar.gz 
+[root@localhost jdk]# tar zxvf jdk-7u75-linux-x64.tar 
 ```
  
 ###将jdk1.7.0_55移动到 /opt/目录下
 
 ```
-[root@localhost jdk]# mv jdk1.7.0_55/ /opt/
+[root@localhost jdk]# mv jdk1.7.0_75/ /opt/
 
 ```
 编辑系统配置文件/etc/profile增加环境变量
@@ -40,7 +40,7 @@ java-1.7.0-openjdk-1.7.0.79-2.5.5.4.el6.i686
 在文件末尾追加以下代码：
 
 ```
-export JAVA_HOME=/opt/jdk1.7.0_55
+export JAVA_HOME=/opt/jdk1.7.0_75
 export PATH=$PATH:$JAVA_HOME/bin
 export CLASSPATH=.:$CLASSPATH
 ```

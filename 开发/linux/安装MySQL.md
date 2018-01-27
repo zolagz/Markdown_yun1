@@ -37,11 +37,11 @@
 	/usr/bin/mysqladmin -u root password 'new-password'　　// 为root账号
 设置密码
  
-第六步：远程连接授权。
+第六步：远程连接授权。参考这里[](https://www.jianshu.com/p/2614c15d7c4d)
 
-	GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
+	GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'admin' WITH GRANT OPTION;
 
-###注意：'myuser'、**'mypassword'** 需要替换成实际的用户名和密码。
+###注意：'root'、**'admin'** 需要替换成实际的用户名和密码。
 
 <!--
 create time: 2018-01-14 15:17:46

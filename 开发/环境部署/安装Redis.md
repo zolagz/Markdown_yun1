@@ -5,7 +5,7 @@ Redis是c语言开发的。
 安装redis需要c语言的编译环境。
 如果没有gcc需要在线安装，Yum install gcc-c++
 
-安装步骤：
+安装步骤：网盘[下载redis](https://pan.baidu.com/s/1dFRofnz)
 
 第一步：redis的源码包上传到linux系统。
 
@@ -142,17 +142,23 @@ b)    redis后台启动
 
 1.7.   Redis集群的搭建
 至少三个节点，为保证每个节点高可用，每个节点要有备份机，故至少六台redis服务器搭建redis伪分布式，在一台虚拟机上运行6个redis实例，需要修改redis端口号复制redis/bin下的所有文件到集群目录下：
-[root@localhost local]# cp redis/bin redis-cluster/redis01 -r
-[root@localhost redis01]# ls
-dump.rdb         redis-check-aof   redis-cli   redis-sentinel
-redis-benchmark  redis-check-dump  redis.conf  redis-server
-[root@localhost redis01]# rm dump.rdb 
+
+	[root@localhost local]# cp redis/bin redis-cluster/redis01 -r
+	[root@localhost redis01]# ls
+	dump.rdb         redis-check-aof   redis-cli   redis-sentinel
+	redis-benchmark  redis-check-dump  redis.conf  redis-server
+	[root@localhost redis01]# rm dump.rdb 
 rm：是否删除普通文件 "dump.rdb"？y
+
 删除redis的数据库，存在数据库时无法建立集群环境
+
+```
 [root@localhost redis01]# ls
 redis-benchmark  redis-check-dump  redis.conf      redis-server
 redis-check-aof  redis-cli         redis-sentinel
 [root@localhost redis01]# cd ..
+
+```
 复制出六份redis
 [root@localhost redis-cluster]# cp redis01/ redis06/ -r
 
