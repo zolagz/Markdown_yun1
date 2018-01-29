@@ -23,3 +23,15 @@
 
 
 
+###yum下载文件的存放位置
+
+```
+默认是： /var/cache/yum
+
+也可以在 /etc/yum.conf 指定
+
+cachedir=/var/cache/yum #存放目录
+keepcache=1 ＃1为保存 0为不保存
+
+metadata_expire=1800 ＃过期时间  
+```

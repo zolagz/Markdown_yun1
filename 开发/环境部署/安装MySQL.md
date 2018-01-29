@@ -39,9 +39,31 @@
  
 第六步：远程连接授权。
 
-	GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
+	GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'admin' WITH GRANT OPTION;
 
-###注意：'myuser'、**'mypassword'** 需要替换成实际的用户名和密码。
+###注意：'root'、**'admin'** 需要替换成实际的用户名和密码。
+
+
+###执行完后切记执行以下命令：
+
+```
+mysql>FLUSH PRIVILEGES;
+
+```
+
+
+###查看修改后的用户信息
+
+	mysql>select host,user,password from user;
+	
+	
+如果密码设置错了，用下面的方法修改；
+###修改密码；
+
+ 	mysql> update user set password = 'admin' where user = '%';
+
+
+[参考链接](https://www.jianshu.com/p/2614c15d7c4d)
 
 <!--
 create time: 2018-01-14 15:17:46
