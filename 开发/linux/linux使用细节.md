@@ -21,6 +21,15 @@
 
 
 
+#远程主机间的文件复制
+
+scp 文件 主机ID:/usr/local/dev
+
+![](http://p2ehgqigv.bkt.clouddn.com/18-2-1/5615871.jpg)
+
+查看如下：
+
+![](http://p2ehgqigv.bkt.clouddn.com/18-2-1/63776057.jpg)
 
 
 ###yum下载文件的存放位置
@@ -35,3 +44,14 @@ keepcache=1 ＃1为保存 0为不保存
 
 metadata_expire=1800 ＃过期时间  
 ```
+
+
+###centos7主机重命名
+
+```
+hostnamectl sethostname jamson
+```
+然后退出主机，重新登录，即可
+[参考链接 ](http://www.linuxidc.com/Linux/2017-03/141355.htm)
+
+

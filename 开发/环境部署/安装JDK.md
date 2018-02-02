@@ -42,7 +42,7 @@ java-1.7.0-openjdk-1.7.0.79-2.5.5.4.el6.i686
 ```
 export JAVA_HOME=/opt/jdk1.7.0_75
 export PATH=$PATH:$JAVA_HOME/bin
-export CLASSPATH=.:$CLASSPATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ```
 保存并退出
 设置当前配置立即生效
