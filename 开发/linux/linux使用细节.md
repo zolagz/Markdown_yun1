@@ -55,3 +55,28 @@ hostnamectl sethostname jamson
 [参考链接 ](http://www.linuxidc.com/Linux/2017-03/141355.htm)
 
 
+
+解决ssh连接慢
+
+在linux中，默认就是开启了SSH的反向DNS解析,这个会消耗大量时间，因此需要关闭。
+
+\# vi /etc/ssh/sshd_config
+
+UseDNS=no
+
+在配置文件中，虽然UseDNS yes是被注释的，但默认开关就是yes
+
+vi 下查找字符串方法。直接/查找的串即可
+
+
+修改之后记得重启sshd服务
+
+\# service sshd restart
+
+👆[参考链接](http://blog.csdn.net/doiido/article/details/43793391)
+
+
+
+
+
+
