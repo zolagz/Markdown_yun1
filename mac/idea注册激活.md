@@ -7,3 +7,21 @@ sudo vim /private/etc/hosts
 0.0.0.0 account.jetbrains.com 
 然后复制注册码即可
 
+
+###2018-2-25更新
+
+IntelliJ IDEA2017.3破解教程
+
+
+
+![](http://p2ehgqigv.bkt.clouddn.com/18-2-25/93028519.jpg)
+
+http://idea.java.sx/
+
+教程来源：http://blog.csdn.net/qq_27686779/article/details/78870816
+
+
+
+
+
+
