@@ -1,6 +1,9 @@
 # Hive基本操作
 
 Hive配置单元包含一个名为 default 默认的数据库.
+
+
+###创建表：
 	
 	create database [if not exists] <database name>；---创建数据库
 	
@@ -11,6 +14,30 @@ Hive配置单元包含一个名为 default 默认的数据库.
 		eg.  hive> drop database if exists users cascade;
 	
 	use <database name>; --切换数据库
+	
+	
+###例子
+创建表 t_a1
+
+```
+create table t_a1(id int,name string) row format delimited fields terminated by ',';
+
+```
+
+创建表 t_b
+
+```
+create table b(id int,name string) row format delimited fields terminated by ',';
+
+```
+
+从本地导入数据：
+
+```
+load data local inpath '/root/hivedata/a.txt' into table t_a;
+
+load data local inpath '/root/hivedata/b.txt' into table t_b;
+```
 	
 
 ###分区表（PARTITIONED BY）
