@@ -234,8 +234,9 @@ public class WordCountDriver {
 
 
         //指定本次mr 输入的数据路径 和最终输出结果存放在什么位置
-        FileInputFormat.setInputPaths(job,"D:\\wordcount\\input");
-        FileOutputFormat.setOutputPath(job,new Path("D:\\wordcount\\output"));
+        FileInputFormat.setInputPaths(job,"/Users/alfred/Desktop/mydir/wordCount/input");
+        FileOutputFormat.setOutputPath(job,new Path("/Users/alfred/Desktop/mydir/wordCount/output"));
+
 
 //        job.submit();
         //提交程序  并且监控打印程序执行情况
