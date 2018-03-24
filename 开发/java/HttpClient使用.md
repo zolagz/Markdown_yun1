@@ -30,6 +30,34 @@ import java.io.BufferedReader;import java.io.InputStream;import java.io.InputS
 ####1.1.4	 使用HttpClient的流畅API（了解）```package cn.itcast.spider.httpClient;import java.nio.charset.Charset;import org.apache.http.client.fluent.Request;/** 流畅的api * */public class FluentHttpClient {   public static void main(String[] args) throws Exception {      String html = Request.Get("http://www.itcast.cn").execute().returnContent().asString(Charset.forName("utf-8"));      System.out.println(html);      //    Request.Post("http://targethost/login")//          .bodyForm(Form.form().add("username", "vip").add("password", "secret").build()).execute()//          .returnContent();   }}
 
 ```
+
+###参考
+
+```
+
+//        请求路径
+        String url = "https://www.mi.com/?client_id=180100041086&masid=17489.0001&kwd=%E5%B0%8F%E7%B1%B3";
+
+        //初始化一个httpclient
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+    
+//        指定请求方式
+        HttpGet hget = new HttpGet(url);
+        
+//        执行请求
+        CloseableHttpResponse response = httpClient.execute(hget);
+
+// 获取请求响应
+        HttpEntity entity = response.getEntity();
+        
+//        解析请求
+        String enStr = EntityUtils.toString(entity, Charset.forName("utf-8"));
+
+        System.out.println(enStr);
+
+```
+
+
 <!--
 create time: 2018-01-12 18:48:17
 Author: Alfred
