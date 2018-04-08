@@ -1,0 +1,782 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>命令脚本操作 | 简介</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../part1/8.html" />
+    
+    
+    <link rel="prev" href="../part1/5.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.5"
+        data-chapter-title="命令脚本操作"
+        data-filepath="part1/6.md"
+        data-basepath=".."
+        data-revision="Thu Dec 15 2016 17:13:16 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        课程介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="part1/1.html">
+            
+                
+                    <a href="../part1/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        创建库与表
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="part1/2.html">
+            
+                
+                    <a href="../part1/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        数据库简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="part1/3.html">
+            
+                
+                    <a href="../part1/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        安装管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="part1/4.html">
+            
+                
+                    <a href="../part1/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        数据完整性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="part1/5.html">
+            
+                
+                    <a href="../part1/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        图形窗口操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="part1/6.html">
+            
+                
+                    <a href="../part1/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        命令脚本操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="part1/8.html">
+            
+                
+                    <a href="../part1/8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        总结与作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="part2/1.html">
+            
+                
+                    <a href="../part2/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        查询
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="part2/2.html">
+            
+                
+                    <a href="../part2/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        条件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="part2/4.html">
+            
+                
+                    <a href="../part2/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        聚合
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="part2/3.html">
+            
+                
+                    <a href="../part2/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        分组
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="part2/5.html">
+            
+                
+                    <a href="../part2/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        排序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="part2/7.html">
+            
+                
+                    <a href="../part2/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        分页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="part2/6.html">
+            
+                
+                    <a href="../part2/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        总结与作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="part3/1.html">
+            
+                
+                    <a href="../part3/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        高级
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="part3/9.html">
+            
+                
+                    <a href="../part3/9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        关系
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="part3/2.html">
+            
+                
+                    <a href="../part3/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        连接
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="part3/3.html">
+            
+                
+                    <a href="../part3/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        自关联
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="part3/6.html">
+            
+                
+                    <a href="../part3/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        子查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="part3/4.html">
+            
+                
+                    <a href="../part3/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        内置函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="part3/5.html">
+            
+                
+                    <a href="../part3/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="part3/7.html">
+            
+                
+                    <a href="../part3/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        事务
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="part3/8.html">
+            
+                
+                    <a href="../part3/8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        总结与作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="part4/1.html">
+            
+                
+                    <a href="../part4/1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        与python交互
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="part4/2.html">
+            
+                
+                    <a href="../part4/2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        交互类型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="part4/3.html">
+            
+                
+                    <a href="../part4/3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        增改删
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="part4/4.html">
+            
+                
+                    <a href="../part4/4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        查询
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="part4/5.html">
+            
+                
+                    <a href="../part4/5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        封装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="part4/6.html">
+            
+                
+                    <a href="../part4/6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        用户登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="part4/7.html">
+            
+                
+                    <a href="../part4/7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        总结与作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >简介</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x8FDE;&#x63A5;">&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x8FDE;&#x63A5;</h1>
+<ul>
+<li>&#x547D;&#x4EE4;&#x64CD;&#x4F5C;&#x65B9;&#x5F0F;&#xFF0C;&#x5728;&#x5DE5;&#x4F5C;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x66F4;&#x591A;&#x4E00;&#x4E9B;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x8FBE;&#x5230;&#x719F;&#x7EC3;&#x7684;&#x7A0B;&#x5EA6;</li>
+<li>&#x6253;&#x5F00;&#x7EC8;&#x7AEF;&#xFF0C;&#x8FD0;&#x884C;&#x547D;&#x4EE4;</li>
+</ul>
+<pre><code>mysql -uroot -p
+&#x56DE;&#x8F66;&#x540E;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x5F53;&#x524D;&#x8BBE;&#x7F6E;&#x7684;&#x5BC6;&#x7801;&#x4E3A;mysql
+</code></pre><ul>
+<li>&#x8FDE;&#x63A5;&#x6210;&#x529F;&#x540E;&#x5982;&#x4E0B;&#x56FE;</li>
+</ul>
+<p><img src="images/ok.png" alt="&#x8FDE;&#x63A5;&#x6210;&#x529F;"></p>
+<ul>
+<li>&#x9000;&#x51FA;&#x767B;&#x5F55;</li>
+</ul>
+<pre><code>quit&#x6216;exit
+</code></pre><ul>
+<li>&#x9000;&#x51FA;&#x6210;&#x529F;&#x540E;&#x5982;&#x4E0B;&#x56FE;</li>
+</ul>
+<p><img src="images/quit.png" alt="&#x9000;&#x51FA;"></p>
+<ul>
+<li>&#x767B;&#x5F55;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x6548;&#x679C;</li>
+</ul>
+<pre><code>&#x67E5;&#x770B;&#x7248;&#x672C;&#xFF1A;select version();
+&#x663E;&#x793A;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#xFF1A;select now();
+</code></pre><ul>
+<li>&#x6CE8;&#x610F;&#xFF1A;&#x5728;&#x8BED;&#x53E5;&#x7ED3;&#x5C3E;&#x8981;&#x4F7F;&#x7528;&#x5206;&#x53F7;;</li>
+</ul>
+<h1 id="&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;">&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;</h1>
+<ul>
+<li>&#x4E00;&#x822C;&#x5728;&#x516C;&#x53F8;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5C06;&#x6570;&#x636E;&#x5E93;&#x7EDF;&#x4E00;&#x642D;&#x5EFA;&#x5728;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF0C;&#x6240;&#x6709;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x5171;&#x7528;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x7535;&#x8111;&#x4E2D;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;</li>
+<li>&#x8FD0;&#x884C;&#x547D;&#x4EE4;</li>
+</ul>
+<pre><code>mysql -hip&#x5730;&#x5740; -uroot -p
+</code></pre><ul>
+<li>-h&#x540E;&#x9762;&#x5199;&#x8981;&#x8FDE;&#x63A5;&#x7684;&#x4E3B;&#x673A;ip&#x5730;&#x5740;</li>
+<li>-u&#x540E;&#x9762;&#x5199;&#x8FDE;&#x63A5;&#x7684;&#x7528;&#x6237;&#x540D;</li>
+<li>-p&#x56DE;&#x8F66;&#x540E;&#x5199;&#x5BC6;&#x7801;</li>
+</ul>
+<h1 id="&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;">&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;</h1>
+<ul>
+<li>&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;</li>
+</ul>
+<pre><code>create database &#x6570;&#x636E;&#x5E93;&#x540D; charset=utf8;
+</code></pre><ul>
+<li>&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;</li>
+</ul>
+<pre><code>drop database &#x6570;&#x636E;&#x5E93;&#x540D;;
+</code></pre><ul>
+<li>&#x5207;&#x6362;&#x6570;&#x636E;&#x5E93;</li>
+</ul>
+<pre><code>use &#x6570;&#x636E;&#x5E93;&#x540D;;
+</code></pre><ul>
+<li>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x9009;&#x62E9;&#x7684;&#x6570;&#x636E;&#x5E93;</li>
+</ul>
+<pre><code>select database();
+</code></pre><h1 id="&#x8868;&#x64CD;&#x4F5C;">&#x8868;&#x64CD;&#x4F5C;</h1>
+<ul>
+<li>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x6240;&#x6709;&#x8868;</li>
+</ul>
+<pre><code>show tables;
+</code></pre><ul>
+<li>&#x521B;&#x5EFA;&#x8868;</li>
+<li><p>auto_increment&#x8868;&#x793A;&#x81EA;&#x52A8;&#x589E;&#x957F;</p>
+<pre><code>create table &#x8868;&#x540D;(&#x5217;&#x53CA;&#x7C7B;&#x578B;);
+&#x5982;&#xFF1A;
+create table students(
+id int auto_increment primary key,
+sname varchar(10) not null
+);
+</code></pre></li>
+<li><p>&#x4FEE;&#x6539;&#x8868;</p>
+</li>
+</ul>
+<pre><code>alter table &#x8868;&#x540D; add|change|drop &#x5217;&#x540D; &#x7C7B;&#x578B;;
+&#x5982;&#xFF1A;
+alter table students add birthday datetime;
+</code></pre><ul>
+<li>&#x5220;&#x9664;&#x8868;</li>
+</ul>
+<pre><code>drop table &#x8868;&#x540D;;
+</code></pre><ul>
+<li>&#x67E5;&#x770B;&#x8868;&#x7ED3;&#x6784;</li>
+</ul>
+<pre><code>desc &#x8868;&#x540D;;
+</code></pre><ul>
+<li>&#x66F4;&#x6539;&#x8868;&#x540D;&#x79F0;</li>
+</ul>
+<pre><code>rename table &#x539F;&#x8868;&#x540D; to &#x65B0;&#x8868;&#x540D;;
+</code></pre><ul>
+<li>&#x67E5;&#x770B;&#x8868;&#x7684;&#x521B;&#x5EFA;&#x8BED;&#x53E5;</li>
+</ul>
+<pre><code>show create table &apos;&#x8868;&#x540D;&apos;;
+</code></pre><h1 id="&#x6570;&#x636E;&#x64CD;&#x4F5C;">&#x6570;&#x636E;&#x64CD;&#x4F5C;</h1>
+<ul>
+<li>&#x67E5;&#x8BE2;</li>
+</ul>
+<pre><code>select * from &#x8868;&#x540D;
+</code></pre><ul>
+<li>&#x589E;&#x52A0;</li>
+</ul>
+<pre><code>&#x5168;&#x5217;&#x63D2;&#x5165;&#xFF1A;insert into &#x8868;&#x540D; values(...)
+&#x7F3A;&#x7701;&#x63D2;&#x5165;&#xFF1A;insert into &#x8868;&#x540D;(&#x5217;1,...) values(&#x503C;1,...)
+&#x540C;&#x65F6;&#x63D2;&#x5165;&#x591A;&#x6761;&#x6570;&#x636E;&#xFF1A;insert into &#x8868;&#x540D; values(...),(...)...;
+&#x6216;insert into &#x8868;&#x540D;(&#x5217;1,...) values(&#x503C;1,...),(&#x503C;1,...)...;
+</code></pre><ul>
+<li>&#x4E3B;&#x952E;&#x5217;&#x662F;&#x81EA;&#x52A8;&#x589E;&#x957F;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x5168;&#x5217;&#x63D2;&#x5165;&#x65F6;&#x9700;&#x8981;&#x5360;&#x4F4D;&#xFF0C;&#x901A;&#x5E38;&#x4F7F;&#x7528;0&#xFF0C;&#x63D2;&#x5165;&#x6210;&#x529F;&#x540E;&#x4EE5;&#x5B9E;&#x9645;&#x6570;&#x636E;&#x4E3A;&#x51C6;</li>
+<li>&#x4FEE;&#x6539;</li>
+</ul>
+<pre><code>update &#x8868;&#x540D; set &#x5217;1=&#x503C;1,... where &#x6761;&#x4EF6;
+</code></pre><ul>
+<li>&#x5220;&#x9664;</li>
+</ul>
+<pre><code>delete from &#x8868;&#x540D; where &#x6761;&#x4EF6;
+</code></pre><ul>
+<li>&#x903B;&#x8F91;&#x5220;&#x9664;&#xFF0C;&#x672C;&#x8D28;&#x5C31;&#x662F;&#x4FEE;&#x6539;&#x64CD;&#x4F5C;update</li>
+</ul>
+<pre><code>alter table students add isdelete bit default 0;
+&#x5982;&#x679C;&#x9700;&#x8981;&#x5220;&#x9664;&#x5219;
+update students isdelete=1 where ...;
+</code></pre><h1 id="&#x5907;&#x4EFD;&#x4E0E;&#x6062;&#x590D;">&#x5907;&#x4EFD;&#x4E0E;&#x6062;&#x590D;</h1>
+<h4 id="&#x6570;&#x636E;&#x5907;&#x4EFD;">&#x6570;&#x636E;&#x5907;&#x4EFD;</h4>
+<ul>
+<li>&#x8FDB;&#x5165;&#x8D85;&#x7EA7;&#x7BA1;&#x7406;&#x5458;</li>
+</ul>
+<pre><code>sudo -s
+</code></pre><ul>
+<li>&#x8FDB;&#x5165;mysql&#x5E93;&#x76EE;&#x5F55;</li>
+</ul>
+<pre><code>cd /var/lib/mysql
+</code></pre><ul>
+<li>&#x8FD0;&#x884C;mysqldump&#x547D;&#x4EE4;</li>
+</ul>
+<pre><code>mysqldump &#x2013;uroot &#x2013;p &#x6570;&#x636E;&#x5E93;&#x540D; &gt; ~/Desktop/&#x5907;&#x4EFD;&#x6587;&#x4EF6;.sql;
+&#x6309;&#x63D0;&#x793A;&#x8F93;&#x5165;mysql&#x7684;&#x5BC6;&#x7801;
+</code></pre><h4 id="&#x6570;&#x636E;&#x6062;&#x590D;">&#x6570;&#x636E;&#x6062;&#x590D;</h4>
+<ul>
+<li><p>&#x8FDE;&#x63A5;mysqk&#xFF0C;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;</p>
+</li>
+<li><p>&#x9000;&#x51FA;&#x8FDE;&#x63A5;&#xFF0C;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;</p>
+</li>
+</ul>
+<pre><code>mysql -uroot &#x2013;p &#x6570;&#x636E;&#x5E93;&#x540D; &lt; ~/Desktop/&#x5907;&#x4EFD;&#x6587;&#x4EF6;.sql
+&#x6839;&#x636E;&#x63D0;&#x793A;&#x8F93;&#x5165;mysql&#x5BC6;&#x7801;
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../part1/5.html" class="navigation navigation-prev " aria-label="Previous page: 图形窗口操作"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../part1/8.html" class="navigation navigation-next " aria-label="Next page: 总结与作业"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
