@@ -1,11 +1,9 @@
-# README
+# mysql行转列，列转行
 
-[慕课网Redis教程](http://www.imooc.com/learn/839)
-
-[Spring事务管理](http://www.imooc.com/learn/478)
+[参考链接](http://www.jb51.net/article/109203.htm)
 
 <!--
-create time: 2018-03-14 17:23:06
+create time: 2018-04-22 12:06:30
 Author: Alfred
 
 This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.media/starts/default.md

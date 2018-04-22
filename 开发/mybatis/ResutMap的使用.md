@@ -1,11 +1,10 @@
-# README
+# ResutMap的使用
 
-[慕课网Redis教程](http://www.imooc.com/learn/839)
+[动态sql](http://www.mybatis.org/mybatis-3/zh/dynamic-sql.html)
 
-[Spring事务管理](http://www.imooc.com/learn/478)
 
 <!--
-create time: 2018-03-14 17:23:06
+create time: 2018-04-19 14:19:59
 Author: Alfred
 
 This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.media/starts/default.md

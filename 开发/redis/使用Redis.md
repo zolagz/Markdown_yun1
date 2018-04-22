@@ -1,4 +1,20 @@
-# 使用Redis
+
+# 使用Redis(2)
+
+连接本地redis
+进入redis/bin/
+
+> ./redis-cli
+
+在远程服务器上执行命令
+
+>$ redis-cli -h host -p port -a password
+
+
+
+
+
+
 
 ###Redis 五种数据类型
 * 字符串 （String）

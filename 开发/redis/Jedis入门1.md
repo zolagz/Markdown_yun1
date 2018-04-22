@@ -26,27 +26,50 @@
 代码：
 
 ```
- public static void main(String[] args) {
-        Jedis jedis = new Jedis("192.168.25.130", 6379);
-
-        jedis.set("company","北京哈哈哈");
-
-        System.out.println(jedis.get("company"));
-    }
-
+<!--第一种连接方式，不推荐-->
     @Test
-    public void test2(){
+    public void connect1(){
+        // 设置IP地址和端口        
+        Jedis jedis = new Jedis("192.168.25.130", 6379);
+        // 保存数据
+        jedis.set("company","北京科技");
+        // 获取数据
+        String value = jedis.get("company");
+        System.out.println(value);
+        //  释放资源
+        jedis.close();;
+    }
+    
 
+<!--第二种连接方式，-->
+	@Test
+    public void test2() {
+
+        // 获得连接池的配置对象
         JedisPoolConfig config = new JedisPoolConfig();
-
+        //   设置最大连接数
         config.setMaxTotal(20);
+        //  设置最大空闲连接
+        config.setMaxIdle(10);
 
+        // 获得连接池
         JedisPool pool = new JedisPool(config, "192.168.25.130", 6379);
 
-        Jedis jedis = pool.getResource();
+        Jedis jedis = null;
 
-        jedis.set("class","01班");
-        System.out.println(jedis.get("class"));
+        try {
+            jedis = pool.getResource();
+            jedis.set("class", "01班");
+            System.out.println(jedis.get("class"));
+
+        } catch (Exception e) {
+            if (jedis != null) {
+                jedis.close();
+            }
+            if (pool != null) {
+                pool.close();
+            }
+        }
     }
 ```
 

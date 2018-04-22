@@ -16,6 +16,7 @@
 
 * Control + I 实现方法（实现接口中的方法）
 * Command + enter 开始新的一行
+* option + enter 快速创建方法
 
 
 * Command + Option + V 提取变量
