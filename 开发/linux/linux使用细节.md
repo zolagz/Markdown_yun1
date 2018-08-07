@@ -1,5 +1,28 @@
 ###linux 使用
 
+
+###查看linux的版本
+
+```
+cat /etc/redhat-release
+```
+
+---------
+### yum下载你相关
+```
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: yum
+    Memory :  23 M RSS (419 MB VSZ)
+    Started: Wed Jul 11 16:57:19 2018 - 04:33 ago
+    State  : Traced/Stopped, pid: 31312
+```
+解决方法
+
+```
+rm -f /var/run/yum.pid
+```
+
+
 ####修改root用户密码
 
 ```
